@@ -1,0 +1,7 @@
+{
+  "name": "@overleaf/eslint-plugin",
+  "version": "0.0.0",
+  "description": "Placeholder for @overleaf/eslint-plugin",
+  "main": "index.js",
+  "license": "MIT"
+}
