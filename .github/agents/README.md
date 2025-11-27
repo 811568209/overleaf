@@ -66,7 +66,7 @@ To create a functional custom agent:
 
 ### Example
 
-For a complete working example, see [`example-agent.agent.md`](./example-agent.agent.md) in this directory, which shows how to configure a LaTeX Helper agent for the Overleaf project.
+For a complete working example, see [`example-agent.agent.md`](./example-agent.agent.md) in this directory. This example demonstrates a LaTeX Helper agent, but the same pattern can be applied to any domain-specific assistant your repository needs (e.g., code review, testing, documentation, security analysis).
 
 ## References
 

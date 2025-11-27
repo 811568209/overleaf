@@ -3,8 +3,11 @@
 # See README.md in this directory for detailed instructions
 # Format documentation: https://gh.io/customagents/config
 
-name:        # REQUIRED: unique identifier (e.g., "latex-helper")
-description: # REQUIRED: brief summary (1-2 sentences)
+# REQUIRED: unique identifier (e.g., "latex-helper")
+name:
+
+# REQUIRED: brief summary (1-2 sentences)
+description:
 ---
 
 # My Agent

@@ -1,7 +1,7 @@
 ---
 # Example GitHub Copilot Custom Agent Configuration
-# This file demonstrates how to configure a custom agent for the Overleaf project
-# DO NOT use this file directly - it's for reference only
+# ⚠️ **WARNING: This is an example file for reference only**
+# **DO NOT use this file directly** - copy and modify it for your needs
 
 name: latex-helper
 description: Assists with LaTeX document editing and compilation issues in Overleaf
