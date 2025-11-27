@@ -19,7 +19,7 @@ Custom agents extend GitHub Copilot's capabilities by creating specialized assis
 
 The file follows a specific format required by GitHub Copilot:
 
-1. **YAML Front Matter** (Lines 1-9):
+1. **YAML Front Matter**:
    ```yaml
    ---
    name:           # The name of your custom agent
@@ -28,7 +28,7 @@ The file follows a specific format required by GitHub Copilot:
    ```
    This section contains metadata about the agent that GitHub Copilot uses to identify and describe it.
 
-2. **Agent Instructions** (Lines 11-14):
+2. **Agent Instructions**:
    ```markdown
    # My Agent
    
@@ -66,30 +66,7 @@ To create a functional custom agent:
 
 ### Example
 
-Here's what a completed agent might look like:
-
-```yaml
----
-name: latex-helper
-description: Assists with LaTeX document editing and compilation issues in Overleaf
----
-
-# LaTeX Helper Agent
-
-I am a specialized agent for helping with LaTeX-related tasks in the Overleaf codebase.
-
-My expertise includes:
-- LaTeX syntax and compilation errors
-- Document structure and best practices
-- Troubleshooting compilation issues
-- Package recommendations and usage
-
-When helping with LaTeX code, I will:
-1. Identify common LaTeX errors and suggest fixes
-2. Recommend appropriate packages for specific needs
-3. Follow Overleaf's coding standards and conventions
-4. Provide examples relevant to the Overleaf platform
-```
+For a complete working example, see [`example-agent.agent.md`](./example-agent.agent.md) in this directory, which shows how to configure a LaTeX Helper agent for the Overleaf project.
 
 ## References
 
