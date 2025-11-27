@@ -14,11 +14,13 @@ describe('LanguagePicker', function () {
         en: 'English',
         fr: 'Français',
         es: 'Español',
+        'zh-CN': '中文',
       },
       subdomainLang: {
         en: { lngCode: 'en', url: 'overleaf.com' },
         fr: { lngCode: 'fr', url: 'fr.overleaf.com' },
         es: { lngCode: 'es', url: 'es.overleaf.com' },
+        'zh-CN': { lngCode: 'zh-CN', url: 'zh.overleaf.com' },
       },
     })
 
@@ -38,6 +40,7 @@ describe('LanguagePicker', function () {
       cy.contains('English').should('exist')
       cy.contains('Français').should('exist')
       cy.contains('Español').should('exist')
+      cy.contains('中文').should('exist')
     })
   })
 
@@ -46,5 +49,12 @@ describe('LanguagePicker', function () {
     cy.get('#language-picker-toggle').should('exist').click()
     cy.contains('Français').click()
     cy.url().should('include', 'fr.overleaf.com')
+  })
+
+  it('supports Chinese language selection', function () {
+    cy.mount(<LanguagePicker showHeader />)
+    cy.get('#language-picker-toggle').should('exist').click()
+    cy.contains('中文').click()
+    cy.url().should('include', 'zh.overleaf.com')
   })
 })
